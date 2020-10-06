@@ -2,16 +2,27 @@
    
    <div>
     <v-toolbar
+    align-items="left"
+     height="300%"
       dark
       prominent
-      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+      src="https://images.pexels.com/photos/583847/pexels-photo-583847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+     
 
-      <v-toolbar-title>Vuetify</v-toolbar-title>
+      <v-toolbar-title>Matthew Raymond</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
+     
+        <v-app-bar-nav-icon
+       
+          dark
+          @click.stop="drawer = !drawer"
+        >
+      
+       </v-app-bar-nav-icon>
+   
       <v-btn icon>
         <v-icon>mdi-export</v-icon>
       </v-btn>
@@ -21,20 +32,7 @@
     class="overflow-hidden"
     style="position: relative;"
   >
-    <v-container class="fill-height">
-      <v-row
-        align="center"
-        justify="center"
-      >
-        <v-btn
-          color="pink"
-          dark
-          @click.stop="drawer = !drawer"
-        >
-          Toggle
-        </v-btn>
-      </v-row>
-    </v-container>
+ 
 
     <v-navigation-drawer
       v-model="drawer"
@@ -43,11 +41,11 @@
     >
       <v-list-item>
         <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
+          <v-img src="https://media-exp1.licdn.com/dms/image/C4E35AQF0n_grf5Pu7g/profile-framedphoto-shrink_200_200/0?e=1602093600&v=beta&t=e9LWXLaszF2j6ZHKJUjnYpARHHgLfcUwioSDFZxG_EA"></v-img>
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>John Leider</v-list-item-title>
+          <v-list-item-title>Matthew Raymond</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
