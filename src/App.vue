@@ -68,15 +68,21 @@
       </v-list>
 
     </v-navigation-drawer>
-    <v-container
-    fill-height>
-        <v-layout row wrap align-center>>
+    <v-container fluid>
+ <v-row justify=“space-around” align=“center”>
+        <v-col cols=“12” lg=“6”>
+      
+      
+
           <v-card
-    class="mx-auto"
-    align-content="center"
-    max-width="344"
+ 
+     
+       
+
+  
     outlined
   >
+
   
     <v-list-item three-line>
       <v-list-item-content>
@@ -105,14 +111,20 @@
         Button
       </v-btn>
     </v-card-actions>
-   
+  
   </v-card>
-   <v-card
-    class="mx-auto"
-    align-content="center"
-    max-width="344"
+</v-col>
+
+  <v-col cols=“12” lg=“6”>
+     <v-card
+    
+     
+       
+
+ 
     outlined
   >
+
   
     <v-list-item three-line>
       <v-list-item-content>
@@ -122,7 +134,7 @@
         <v-list-item-title class="headline mb-1">
           Headline 5
         </v-list-item-title>
-        <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
+        <v-list-item-subtitle></v-list-item-subtitle>
       </v-list-item-content>
 
       <v-list-item-avatar
@@ -141,10 +153,19 @@
         Button
       </v-btn>
     </v-card-actions>
-   
+  
   </v-card>
-        </v-layout>
+
+ 
+</v-col>
+
+ </v-row>
+
+
+    
+    
     </v-container>
+ 
   </v-sheet>
  
 
@@ -160,14 +181,22 @@
 
 
   export default {
-    data () {
-      return {
+   data () {
+   return {
         drawer: null,
         items: [
           { title: 'Home', icon: 'mdi-view-dashboard' },
           { title: 'About', icon: 'mdi-forum' },
         ],
       }
-    },
+   }
   }
+
+
+
+
+
+       
+   
+ 
 </script>
