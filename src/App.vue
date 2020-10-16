@@ -1,3 +1,5 @@
+
+
 <template>
    
    <div>
@@ -68,10 +70,10 @@
       </v-list>
 
     </v-navigation-drawer>
-    <v-container fluid>
- <v-row justify=“space-around” align=“center”>
-        <v-col cols=“12” lg=“6”>
-      
+   <v-container v-for="item in items" :key="item.val" class="background">
+       <div class="d-flex flex-no-wrap justify-space-between">
+    <v-row :class="item.val">
+      <v-col xs2>
       
 
           <v-card
@@ -89,7 +91,7 @@
         <div class="overline mb-4">
           OVERLINE
         </div>
-        <v-list-item-title class="headline mb-1">
+        <v-list-item-title class=text-center>
           Headline 5
         </v-list-item-title>
         <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
@@ -101,50 +103,16 @@
         color="grey"
       ></v-list-item-avatar>
     </v-list-item>
-
+  <v-avatar  class="profile"
+               
+                size="125"
+               tile
+              >
+         <v-img src="https://cf.geekdo-images.com/itemrep/img/090OjiBLiShq_iqolethdTkegrY=/fit-in/246x300/filters:strip_icc()/pic4581181.jpg"> </v-img>
+              </v-avatar>
     <v-card-actions>
-      <v-btn
-        outlined
-        rounded
-        text
-      >
-        Button
-      </v-btn>
-    </v-card-actions>
-  
-  </v-card>
-</v-col>
 
-  <v-col cols=“12” lg=“6”>
-     <v-card
-    
      
-       
-
- 
-    outlined
-  >
-
-  
-    <v-list-item three-line>
-      <v-list-item-content>
-        <div class="overline mb-4">
-          OVERLINE
-        </div>
-        <v-list-item-title class="headline mb-1">
-          Headline 5
-        </v-list-item-title>
-        <v-list-item-subtitle></v-list-item-subtitle>
-      </v-list-item-content>
-
-      <v-list-item-avatar
-        tile
-        size="80"
-        color="grey"
-      ></v-list-item-avatar>
-    </v-list-item>
-
-    <v-card-actions>
       <v-btn
         outlined
         rounded
@@ -152,7 +120,9 @@
       >
         Button
       </v-btn>
+
     </v-card-actions>
+
   
   </v-card>
 
@@ -161,13 +131,15 @@
 
  </v-row>
 
-
+</div>
     
     
     </v-container>
  
   </v-sheet>
- 
+ <div id="app">
+
+</div>
 
 
 
@@ -177,8 +149,33 @@
     </div>
 </template>
 
-<script>
+<style >
 
+.v-card > .v-avatar {
+  border-radius: 0%;
+  justify-content: right;
+  justify-items: right;
+  align-content: right;
+  align-items: right;
+}
+
+</style>
+
+<script>
+import Vue from 'vue'
+import App from './App.vue'
+
+new Vue({
+  el: App,
+  data() {
+    return {
+      items: [
+       
+        {val: 'justify-center'}
+      ]
+    }
+  }
+})
 
   export default {
    data () {
