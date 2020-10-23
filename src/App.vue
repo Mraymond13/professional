@@ -5,7 +5,7 @@
    <div>
     <v-toolbar
     align-items="left"
-     height="300%"
+     height="300%" 
       dark
       prominent
       src="https://images.pexels.com/photos/583847/pexels-photo-583847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -14,7 +14,7 @@
 
       <v-toolbar-title>Matthew Raymond</v-toolbar-title>
 
-      <v-spacer></v-spacer>
+      <v-spacer></v-spacer> 
 
      
         <v-app-bar-nav-icon
@@ -153,10 +153,7 @@
 
 .v-card > .v-avatar {
   border-radius: 0%;
-  justify-content: right;
-  justify-items: right;
-  align-content: right;
-  align-items: right;
+
 }
 
 </style>
